@@ -4,15 +4,21 @@ public class MainClass
 {
     public static void Main()
     {
-        Console.WriteLine("Введите число:");
-        float a = Convert.ToSingle(Console.ReadLine());
-        if (a%2 == 0)
-        {  
-            Console.WriteLine("Число четное");
-        }
-        else
+        string a = Console.ReadLine();
+
+        switch (a)
         {
-            Console.WriteLine("Число нечетное");
+            case "1":
+                Console.WriteLine("Персонаж применяет аптечку");
+                break;
+
+            case "2":
+                Console.WriteLine("Персонаж пьет зелье");
+                break;
+            case "e":
+                Console.WriteLine("Персонаж открывает дверь");
+                break;
         }
+
     }
 }
